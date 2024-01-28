@@ -1,0 +1,176 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url(./master/fonts/Oswald-Regular.ttf);
+}
+.logContainer{
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+.logContainer header{
+    line-height: 50px;
+    background-color: #95a5a6;
+    font-family: "Oswald-Regular";
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.logContainer .content{
+    background-color: #ecf0f1;
+}
+
+.logContainer .content h2 {
+    text-align: center;
+    color: #341f97;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logContainer .content h2 span {
+    color: #40407a;
+}
+
+.logContainer .content h2 span.act {
+    color: #2c2c54;
+}
+
+.logContainer .content div.registar {
+    display: none;
+}
+
+.logContainer .content div.login,
+.logContainer .content div.registar {
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.logContainer .content div.registar {
+    margin: 2% auto;
+}
+
+.logContainer .content div.login form input,
+.logContainer .content div.registar form input,
+.logContainer .content div.registar form select {
+    display: block;
+    width: 60%;
+    outline: 0px;
+    padding: 10px 20px;
+    border: 1px solid #CCC;
+    margin: 5px auto 0px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.logContainer .content div.login form input:hover,
+.logContainer .content div.registar form input:hover {
+    outline: 1px solid #DDD;
+}
+
+.h-s {
+    display: none;
+}
+
+.logContainer .content div.login form input[type="submit"],
+.logContainer .content div.registar form input[type="submit"] {
+    width: 20%;
+    margin-left: 20%;
+    background-color: #222f3e;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.logContainer .content div.login form input[type="submit"]:hover,
+.logContainer .content div.registar form input[type="submit"]:hover {
+    background-color: #10ac84;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .logContainer .content div.registar form input[type="submit"] {
+        width: 40%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .logContainer .content div.login form input,
+    .logContainer .content div.registar form input,
+    .logContainer .content div.registar form select {
+        width: 80%;
+    }
+
+    .logContainer .content div.login form input[type="submit"] {
+        margin-left: 10%;
+        width: 30%;
+    }
+
+    .logContainer .content div.registar form input[type="submit"] {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:550px) {
+
+    .logContainer .content div.login form input,
+    .logContainer .content div.registar form input,
+    .logContainer .content div.registar form select {
+        width: 100%;
+    }
+
+    .logContainer .content div.login form input[type="submit"],
+    .logContainer .content div.registar form input[type="submit"] {
+        width: 45%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width:425px) {
+
+    .logContainer .content div.login,
+    .logContainer .content div.registar {
+        width: 90%;
+    }
+
+    .logContainer .content div.login form input,
+    .logContainer .content div.registar form input,
+    .logContainer .content div.registar form select {
+        width: 90%;
+    }
+
+    .logContainer .content div.login form input[type="submit"],
+    .logContainer .content div.registar form input[type="submit"] {
+        margin-left: 5%;
+    }
+}
+
+.logContainer footer{
+    line-height: 50px;
+    background-color: #95a5a6;
+    font-family: "Oswald-Regular";
+    font-size: 14px;
+    font-weight: bolder;
+}
+.error{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
